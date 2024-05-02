@@ -3,9 +3,9 @@ pipeline{
         label 'kubernetes'
   }
     stages{
-        stage('Destroy Landmark.devopsnetwork.net'){
+        stage('Destroy Konoha.devopsnetwork.net'){
             steps{
-                sh "echo 'Deploy Tesla To Cluster'"
+                sh "echo 'Konoha.devopsnetwork.net'"
                 sh "terraform init"
                 sh "terraform destroy --auto-approve" 
             }
