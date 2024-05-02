@@ -109,4 +109,4 @@ affinity: {}
 
 mongo_username: devdb
 mongo_password: SpiderVerse #devdb@123
-mongo_db_hostname: mongodb-headless
+mongo_db_hostname: mongodb #mongodb-headless
