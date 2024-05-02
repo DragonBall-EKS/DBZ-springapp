@@ -108,5 +108,5 @@ tolerations: []
 affinity: {}
 
 mongo_username: devdb
-mongo_password: devdb@123
+mongo_password: SpiderVerse #devdb@123
 mongo_db_hostname: mongodb-headless
