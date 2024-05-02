@@ -23,10 +23,10 @@ provider "aws" {
 
 provider "helm" {
   kubernetes {
-    config_path = "/home/terra/.kube/config"
+    config_path = "/home/eks/.kube/config"
   }
 }
 
 provider "kubernetes" {
-    config_path = "/home/terra/.kube/config"
+    config_path = "/home/eks/.kube/config"
   }
