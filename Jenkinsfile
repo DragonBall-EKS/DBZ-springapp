@@ -27,10 +27,11 @@ pipeline{
               sh "terraform plan"   
             }
         }
-        stage('Deploy Landmark.devopsnetwork.net'){
+        stage('Deploy Konoha.devopsnetwork.net'){
             steps{
-              sh "echo 'Deploy Landmark.devopsnetwork.net'"
-              sh "terraform apply --auto-approve"   
+              withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'aws_cred', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY')]) {  
+                sh "echo 'Deploy Landmark.devopsnetwork.net'"
+                sh "terraform apply --auto-approve"   
             }
         }
     }
